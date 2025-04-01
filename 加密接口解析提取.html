@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://www.xn-%2Dsss604efuw.com/jm/ -->
+<html id="wnMAKg" fr-init-rc="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>加密接口解析提取</title>
+    <!-- 引入Bootstrap样式库 -->
+    <link rel="stylesheet" href="./加密接口解析提取_files/bootstrap.min.css">
+    <style>
+        body {
+            margin-top: 40px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .loading {
+            display: none;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+    </style>
+<style id="HLKdxj𝚣rLghT" media="screen" type="text/css" fr-css-b0407be7="false">@charset "UTF-8";:root>#fr-dialog-ac61bb78{display:block!important;width:auto!important;height:auto!important;background:0 0!important;opacity:1!important;border-width:0!important;outline:0!important;z-index:2147483647!important}:root>#fr-dialog-ac61bb78::backdrop{background:transparent!important}#fr-dialog-ac61bb78>fr-colorpicker div{all:revert}@font-face{font-family:Anton;font-style:normal;font-weight:400;font-display:swap;src:local("Impact"),url(https://fonts.gstatic.com/s/anton/v25/1Ptgg87LROyAm3Kz-C8.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+0304,U+0308,U+0329,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}:root{--fr-font-basefont:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;--fr-font-emoji:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji','Android Emoji',EmojiSymbols,'EmojiOne Mozilla','Twemoji Mozilla','Segoe UI Symbol','Noto Color Emoji Compat','Font Awesome 6 Pro','Font Awesome 5 Pro',FontAwesome,emoji,codicon,iconfont,icomoon,IcoFont,bwi-font,fontello,themify,bootstrap-icons,'Segoe Fluent Icons','Material Icons','Material Icons Extended','Material Icons Outlined','Material Icons Round','Material Icons Sharp','Material Icons Two Tone','Google Material Icons','Google Material Icons Filled','Material Symbols Outlined','Material Symbols Round','Material Symbols Rounded','Material Symbols Sharp','Google Symbols';--fr-font-fontscale:1.000;--fr-font-family:'Microsoft YaHei UI';--fr-font-shadow:0 0 0.75px #7c7c7cdd;--fr-font-stroke:0.015px currentcolor;--fr-no-stroke:0px transparent;--fr-fix-stroke:var(--fr-no-stroke);--fr-fix-shadow:0 0 0.75px #7c7c7c2b;--fr-render-text:optimizeLegibility;--fr-render-shape:geometricPrecision;--fr-render-image:auto;}@font-face{font-family:"Arial";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"FangSong";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Georgia";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"HanHei SC";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Helvetica";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Helvetica Neue";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"KaiTi";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Microsoft YaHei";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"MingLiU";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"NSimSun";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Noto Sans";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Open Sans";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"PMingLiU";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"PingFangHK-Medium";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"PingFangHK-Regular";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"PingFangSC-Medium";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"PingFangSC-Regular";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"PingFangSC-Semibold";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Roboto";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"RobotoDraft";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"SF Pro SC";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Segoe UI";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"SimHei";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"SimSun";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Tahoma";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Ubuntu";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Verdana";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"\4EFF\5B8B";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"\5B8B\4F53";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"\5FAE\8EDF\6B63\9ED1\9AD4";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"\5FAE\8F6F\96C5\9ED1";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"\6977\4F53";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"\9ED1\4F53";src:local("MicrosoftYaHeiUI");}:root#wnMAKg ::placeholder,:root#wnMAKg :is(:not(i,head *):not([class*='glyph']):not([class*='symbols' i]):not([class*='icon' i]):not([class*='fa-']):not([class*='vjs-'])){font-family:var(--fr-font-family),var(--fr-font-basefont),var(--fr-font-emoji);}:root#wnMAKg :is(:not(i,head *):not([class*='glyph']):not([class*='symbols' i]):not([class*='icon' i]):not([class*='fa-']):not([class*='vjs-'])){text-shadow:var(--fr-font-shadow);-webkit-text-stroke:var(--fr-font-stroke);font-feature-settings:var(--fr-font-feature,unset);font-variant:var(--fr-font-variant,unset);text-rendering:var(--fr-render-text,unset);shape-rendering:var(--fr-render-shape,unset);image-rendering:var(--fr-render-image,unset);font-optical-sizing:auto;font-kerning:auto;}:is(:not([class*='watermark' i],.textLayer *,pre,pre *,code,code *))::selection{color:#fff!important;background:#3367d1!important;-webkit-text-fill-color:#fff!important;text-shadow:none!important;-webkit-text-stroke:var(--fr-no-stroke, 0px transparent)!important;}:root#wnMAKg :is([class*='watermark' i],.textLayer *,pre,pre *,code,code *){text-shadow:none!important;-webkit-text-stroke:var(--fr-no-stroke, 0px transparent)!important;}[fr-bold-195f15515b2],.fr-bold-195f15515b2{-webkit-text-stroke:var(--fr-fix-stroke)!important;}</style><!--<base target="_blank">--><base href="." target="_blank"></head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-5" fr-bold-195f15515b2="">全能接口解密</h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="url" value="" placeholder="输入接口地址，没地址？饭太硬主页有">
+            <button class="btn btn-secondary" type="button" onclick="if (!window.__cfRLUnblockHandlers) return false; crawl()">解密</button>
+        </div>
+       
+        <div class="text-center loading" id="loading" style="display: none;">
+          <div class="spinner-border" role="status">
+            野<span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+       
+        <textarea class="form-control" id="result" cols="80" rows="20" readonly=""></textarea>
+        <div class="text-center mt-3">
+             <a href="https://www.xn--sss604efuw.com/" target="_blank" class="btn btn-primary">主页</a>
+             <button class="btn btn-warning" onclick="if (!window.__cfRLUnblockHandlers) return false; copyText()">复制</button>
+             <!--<button class="btn btn-success" onclick="downloadJar()">下载Jar</button>-->
+            <a href="https://mp.weixin.qq.com/s/e8IHh__L4gXJ5cKUY72HCQ" target="_blank" class="btn btn-danger">饭太硬公众号</a>
+            
+        </div>
+    </div>
+    <!-- 引入Bootstrap JS库 -->
+    <script src="./加密接口解析提取_files/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function crawl() {
+            var xhr = new XMLHttpRequest();
+            var url = document.getElementById('url').value;
+            var resultBox = document.getElementById('result');
+           xhr.open("GET", "./jiemi.php?url=" + encodeURIComponent(url), true);  
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    resultBox.value = xhr.responseText;
+                    document.getElementById('loading').style.display = 'none';
+                }
+            };
+            resultBox.value = '';
+            document.getElementById('loading').style.display = 'block';
+            xhr.send();
+        }
+        function downloadJar() {
+            var resultBox = document.getElementById('result');
+            var url = resultBox.value.match(/"spider":"(.*?)"/)[1];
+            if (url.includes(';md5;')) {
+                url = url.split(';md5;')[0];
+            }
+            fetch(url, {headers: {'User-Agent': 'okhttp'}})
+            .then(function(response) {
+                return response.blob();
+            })
+            .then(function(blob) {
+                var downloadUrl = URL.createObjectURL(blob);
+                var a = document.createElement('a');
+                a.href = downloadUrl;
+                a.download = 'file.jar';
+                a.click();
+                URL.revokeObjectURL(downloadUrl);
+                document.getElementById('loading').style.display = 'none';
+            });
+            document.getElementById('loading').style.display = 'block';
+        }
+    
+        function copyText() {
+          var copyText = document.getElementById("result");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          document.execCommand("copy");
+          alert("偷取成功！");
+        }
+
+
+    </script>
+
+</body></html>
